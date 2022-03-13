@@ -1,0 +1,150 @@
+// Max
+
+@media screen and (max-width: 700px) {
+  body {
+    main {
+      #recetasR {
+        .card-deck {
+          .card {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    header {
+      #check {
+        &:checked ~ .menu {
+          height: 100vh;
+        }
+      }
+    }
+    main {
+      #productosP {
+        .contenidoP,
+        .contenidoPe {
+          background: 55%;
+        }
+        .contenedor-img {
+          width: 90%;
+          grid-template-columns: repeat(1, 1fr);
+
+          .caja {
+            img {
+              height: 200px;
+            }
+          }
+        }
+      }
+
+      #recetas {
+        .contenedor {
+          flex-wrap: wrap;
+
+          .divReceta {
+            margin-top: 10px;
+
+            .none {
+              display: flex;
+            }
+          }
+        }
+      }
+      #testimonios {
+        .contenedor {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #productosP {
+    .contenedor-img {
+      width: 95%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-template-rows: 200px;
+
+      .caja {
+        &:nth-child(1) {
+          grid-column-start: span 1;
+        }
+      }
+    }
+  }
+
+  #footer {
+    position: relative;
+    bottom: 0px;
+    .main-content {
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .box {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+// Min
+@media screen and (min-width: 768px) {
+  body {
+    header {
+      nav {
+        padding: 0;
+        .divLogo {
+          .logo {
+            height: 150px;
+          }
+        }
+
+        .barBoton {
+          display: none;
+        }
+
+        .menu {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+          height: 150px; // = Tamaño de la imagen
+          padding: 0 0 0 230px;
+          margin: 0;
+          left: 0;
+          right: 0;
+          top: 0;
+
+          li {
+            display: inline-block;
+            line-height: 22px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    main {
+      .titulo {
+        font-size: 50px;
+        &::first-letter {
+          font-size: 60px;
+        }
+      }
+      #recetasR {
+        padding: 40px 30px 30px 30px;
+
+        .card-deck {
+          .card {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1434 @@
+body main #nosotros #myTabContent .fade .modals button figure .capa,
+body main #nosotrosN #myTabContent .fade .modals button figure .capa,
+body main #productos #myTabContent .fade .modals button figure .capa,
+body main #productosP #myTabContent .fade .modals button figure .capa,
+body main #recetas #myTabContent .fade .modals button figure .capa,
+body main #recetasR #myTabContent .fade .modals button figure .capa,
+body main #testimonios #myTabContent .fade .modals button figure .capa, body main #nosotros .divReceta figure .capa,
+body main #nosotrosN .divReceta figure .capa,
+body main #productos .divReceta figure .capa,
+body main #productosP .divReceta figure .capa,
+body main #recetas .divReceta figure .capa,
+body main #recetasR .divReceta figure .capa,
+body main #testimonios .divReceta figure .capa, body main #nosotros .divImg figure .capa,
+body main #nosotrosN .divImg figure .capa,
+body main #productos .divImg figure .capa,
+body main #productosP .divImg figure .capa,
+body main #recetas .divImg figure .capa,
+body main #recetasR .divImg figure .capa,
+body main #testimonios .divImg figure .capa {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  /* HEADER */
+  /* MAIN */ }
+  body #header {
+    grid-area: header; }
+  body #main {
+    grid-area: main; }
+  body #footer {
+    grid-area: footer; }
+  body .general {
+    margin: 0;
+    opacity: 0; }
+  body header {
+    align-self: center;
+    width: 100%; }
+    body header .divLogo {
+      margin: 0;
+      position: fixed;
+      top: 0;
+      z-index: 2; }
+      body header .divLogo .logo {
+        width: 100%;
+        height: 90px;
+        margin: 0; }
+        body header .divLogo .logo:hover {
+          transform: scale(1.05); }
+    body header nav {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 90px;
+      position: absolute;
+      z-index: 1;
+      padding: 10px; }
+      body header nav .barBoton {
+        position: fixed;
+        right: 0;
+        border: 1px solid;
+        border-radius: 2px;
+        padding: 0 5.5px;
+        color: white;
+        margin-right: 15px;
+        cursor: pointer; }
+      body header nav .menu {
+        position: fixed;
+        width: calc(100% - 10px);
+        left: 5px;
+        right: 5px;
+        padding: 0;
+        top: 90px;
+        background: rgba(207, 205, 205, 0.836);
+        text-align: center;
+        transition: all 0.5s; }
+        body header nav .menu li {
+          display: none;
+          line-height: 30px;
+          margin: 50px 0;
+          transition: all 0.5s; }
+          body header nav .menu li a {
+            width: 150px;
+            text-shadow: 1px 1px 2px #656565;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 600;
+            color: white; }
+            body header nav .menu li a:hover {
+              color: #830808;
+              transition: 0.3s; }
+            body header nav .menu li a font:hover {
+              border-bottom: 5px solid #830808;
+              color: white; }
+            body header nav .menu li a.off-line font:hover {
+              border-bottom: none;
+              color: white; }
+            body header nav .menu li a img {
+              width: 30px;
+              height: 30px; }
+    body header #check {
+      display: none; }
+      body header #check:checked ~ .menu li {
+        display: block; }
+    body header figure img {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      opacity: 0.9; }
+  body main #nosotros .titulo,
+  body main #nosotrosN .titulo,
+  body main #productos .titulo,
+  body main #productosP .titulo,
+  body main #recetas .titulo,
+  body main #recetasR .titulo,
+  body main #testimonios .titulo {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Fjalla One', sans-serif; }
+    body main #nosotros .titulo::first-letter,
+    body main #nosotrosN .titulo::first-letter,
+    body main #productos .titulo::first-letter,
+    body main #productosP .titulo::first-letter,
+    body main #recetas .titulo::first-letter,
+    body main #recetasR .titulo::first-letter,
+    body main #testimonios .titulo::first-letter {
+      font-size: 60px; }
+  body main #nosotros .contenido,
+  body main #nosotrosN .contenido,
+  body main #productos .contenido,
+  body main #productosP .contenido,
+  body main #recetas .contenido,
+  body main #recetasR .contenido,
+  body main #testimonios .contenido {
+    background-image: url(../../img/nosotros1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body main #nosotros .contenido::before,
+    body main #nosotrosN .contenido::before,
+    body main #productos .contenido::before,
+    body main #productosP .contenido::before,
+    body main #recetas .contenido::before,
+    body main #recetasR .contenido::before,
+    body main #testimonios .contenido::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      position: absolute;
+      opacity: 0.5; }
+    body main #nosotros .contenido h1,
+    body main #nosotros .contenido p,
+    body main #nosotrosN .contenido h1,
+    body main #nosotrosN .contenido p,
+    body main #productos .contenido h1,
+    body main #productos .contenido p,
+    body main #productosP .contenido h1,
+    body main #productosP .contenido p,
+    body main #recetas .contenido h1,
+    body main #recetas .contenido p,
+    body main #recetasR .contenido h1,
+    body main #recetasR .contenido p,
+    body main #testimonios .contenido h1,
+    body main #testimonios .contenido p {
+      position: relative;
+      color: white; }
+    body main #nosotros .contenido a,
+    body main #nosotrosN .contenido a,
+    body main #productos .contenido a,
+    body main #productosP .contenido a,
+    body main #recetas .contenido a,
+    body main #recetasR .contenido a,
+    body main #testimonios .contenido a {
+      text-decoration: none; }
+      body main #nosotros .contenido a h1,
+      body main #nosotrosN .contenido a h1,
+      body main #productos .contenido a h1,
+      body main #productosP .contenido a h1,
+      body main #recetas .contenido a h1,
+      body main #recetasR .contenido a h1,
+      body main #testimonios .contenido a h1 {
+        font-size: 50px;
+        margin-top: 0;
+        font-family: 'Fjalla One', sans-serif; }
+        body main #nosotros .contenido a h1:hover,
+        body main #nosotrosN .contenido a h1:hover,
+        body main #productos .contenido a h1:hover,
+        body main #productosP .contenido a h1:hover,
+        body main #recetas .contenido a h1:hover,
+        body main #recetasR .contenido a h1:hover,
+        body main #testimonios .contenido a h1:hover {
+          opacity: 0.7; }
+        body main #nosotros .contenido a h1::first-letter,
+        body main #nosotrosN .contenido a h1::first-letter,
+        body main #productos .contenido a h1::first-letter,
+        body main #productosP .contenido a h1::first-letter,
+        body main #recetas .contenido a h1::first-letter,
+        body main #recetasR .contenido a h1::first-letter,
+        body main #testimonios .contenido a h1::first-letter {
+          font-size: 60px; }
+    body main #nosotros .contenido p,
+    body main #nosotrosN .contenido p,
+    body main #productos .contenido p,
+    body main #productosP .contenido p,
+    body main #recetas .contenido p,
+    body main #recetasR .contenido p,
+    body main #testimonios .contenido p {
+      font-size: 20px;
+      width: 95%;
+      text-align: center; }
+  body main #nosotros .lema,
+  body main #nosotrosN .lema,
+  body main #productos .lema,
+  body main #productosP .lema,
+  body main #recetas .lema,
+  body main #recetasR .lema,
+  body main #testimonios .lema {
+    text-align: center; }
+  body main #nosotros #myTab,
+  body main #nosotrosN #myTab,
+  body main #productos #myTab,
+  body main #productosP #myTab,
+  body main #recetas #myTab,
+  body main #recetasR #myTab,
+  body main #testimonios #myTab {
+    display: flex;
+    justify-content: center;
+    margin: 60px 60px 0px 60px; }
+    body main #nosotros #myTab li button,
+    body main #nosotrosN #myTab li button,
+    body main #productos #myTab li button,
+    body main #productosP #myTab li button,
+    body main #recetas #myTab li button,
+    body main #recetasR #myTab li button,
+    body main #testimonios #myTab li button {
+      color: #b41111;
+      font-size: 17px; }
+      body main #nosotros #myTab li button:hover,
+      body main #nosotrosN #myTab li button:hover,
+      body main #productos #myTab li button:hover,
+      body main #productosP #myTab li button:hover,
+      body main #recetas #myTab li button:hover,
+      body main #recetasR #myTab li button:hover,
+      body main #testimonios #myTab li button:hover {
+        border-top: 5px solid #830808; }
+  body main #nosotros #myTabContent,
+  body main #nosotrosN #myTabContent,
+  body main #productos #myTabContent,
+  body main #productosP #myTabContent,
+  body main #recetas #myTabContent,
+  body main #recetasR #myTabContent,
+  body main #testimonios #myTabContent {
+    margin: 40px; }
+    body main #nosotros #myTabContent .fade .imposible,
+    body main #nosotrosN #myTabContent .fade .imposible,
+    body main #productos #myTabContent .fade .imposible,
+    body main #productosP #myTabContent .fade .imposible,
+    body main #recetas #myTabContent .fade .imposible,
+    body main #recetasR #myTabContent .fade .imposible,
+    body main #testimonios #myTabContent .fade .imposible {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 0px;
+      align-items: center; }
+      body main #nosotros #myTabContent .fade .imposible .textoNosotros,
+      body main #nosotrosN #myTabContent .fade .imposible .textoNosotros,
+      body main #productos #myTabContent .fade .imposible .textoNosotros,
+      body main #productosP #myTabContent .fade .imposible .textoNosotros,
+      body main #recetas #myTabContent .fade .imposible .textoNosotros,
+      body main #recetasR #myTabContent .fade .imposible .textoNosotros,
+      body main #testimonios #myTabContent .fade .imposible .textoNosotros {
+        margin: 10px 40px;
+        text-align: justify; }
+      body main #nosotros #myTabContent .fade .imposible .ImgNosotros,
+      body main #nosotrosN #myTabContent .fade .imposible .ImgNosotros,
+      body main #productos #myTabContent .fade .imposible .ImgNosotros,
+      body main #productosP #myTabContent .fade .imposible .ImgNosotros,
+      body main #recetas #myTabContent .fade .imposible .ImgNosotros,
+      body main #recetasR #myTabContent .fade .imposible .ImgNosotros,
+      body main #testimonios #myTabContent .fade .imposible .ImgNosotros {
+        margin: 10px 40px; }
+    body main #nosotros #myTabContent .fade .modals,
+    body main #nosotrosN #myTabContent .fade .modals,
+    body main #productos #myTabContent .fade .modals,
+    body main #productosP #myTabContent .fade .modals,
+    body main #recetas #myTabContent .fade .modals,
+    body main #recetasR #myTabContent .fade .modals,
+    body main #testimonios #myTabContent .fade .modals {
+      display: flex;
+      justify-content: space-around; }
+      body main #nosotros #myTabContent .fade .modals button,
+      body main #nosotrosN #myTabContent .fade .modals button,
+      body main #productos #myTabContent .fade .modals button,
+      body main #productosP #myTabContent .fade .modals button,
+      body main #recetas #myTabContent .fade .modals button,
+      body main #recetasR #myTabContent .fade .modals button,
+      body main #testimonios #myTabContent .fade .modals button {
+        padding: 0;
+        border: 0px solid transparent; }
+        body main #nosotros #myTabContent .fade .modals button figure,
+        body main #nosotrosN #myTabContent .fade .modals button figure,
+        body main #productos #myTabContent .fade .modals button figure,
+        body main #productosP #myTabContent .fade .modals button figure,
+        body main #recetas #myTabContent .fade .modals button figure,
+        body main #recetasR #myTabContent .fade .modals button figure,
+        body main #testimonios #myTabContent .fade .modals button figure {
+          margin: 0;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          overflow: hidden;
+          cursor: pointer; }
+          body main #nosotros #myTabContent .fade .modals button figure:hover > .capa,
+          body main #nosotrosN #myTabContent .fade .modals button figure:hover > .capa,
+          body main #productos #myTabContent .fade .modals button figure:hover > .capa,
+          body main #productosP #myTabContent .fade .modals button figure:hover > .capa,
+          body main #recetas #myTabContent .fade .modals button figure:hover > .capa,
+          body main #recetasR #myTabContent .fade .modals button figure:hover > .capa,
+          body main #testimonios #myTabContent .fade .modals button figure:hover > .capa {
+            opacity: 0.9;
+            visibility: visible; }
+          body main #nosotros #myTabContent .fade .modals button figure:hover > .capa h3,
+          body main #nosotrosN #myTabContent .fade .modals button figure:hover > .capa h3,
+          body main #productos #myTabContent .fade .modals button figure:hover > .capa h3,
+          body main #productosP #myTabContent .fade .modals button figure:hover > .capa h3,
+          body main #recetas #myTabContent .fade .modals button figure:hover > .capa h3,
+          body main #recetasR #myTabContent .fade .modals button figure:hover > .capa h3,
+          body main #testimonios #myTabContent .fade .modals button figure:hover > .capa h3 {
+            margin-top: 30%; }
+          body main #nosotros #myTabContent .fade .modals button figure:hover > figure,
+          body main #nosotrosN #myTabContent .fade .modals button figure:hover > figure,
+          body main #productos #myTabContent .fade .modals button figure:hover > figure,
+          body main #productosP #myTabContent .fade .modals button figure:hover > figure,
+          body main #recetas #myTabContent .fade .modals button figure:hover > figure,
+          body main #recetasR #myTabContent .fade .modals button figure:hover > figure,
+          body main #testimonios #myTabContent .fade .modals button figure:hover > figure {
+            transform: scale(2); }
+          body main #nosotros #myTabContent .fade .modals button figure .capa,
+          body main #nosotrosN #myTabContent .fade .modals button figure .capa,
+          body main #productos #myTabContent .fade .modals button figure .capa,
+          body main #productosP #myTabContent .fade .modals button figure .capa,
+          body main #recetas #myTabContent .fade .modals button figure .capa,
+          body main #recetasR #myTabContent .fade .modals button figure .capa,
+          body main #testimonios #myTabContent .fade .modals button figure .capa {
+            position: absolute;
+            top: 0;
+            background-color: #0a0a0a;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center; }
+            body main #nosotros #myTabContent .fade .modals button figure .capa h3,
+            body main #nosotrosN #myTabContent .fade .modals button figure .capa h3,
+            body main #productos #myTabContent .fade .modals button figure .capa h3,
+            body main #productosP #myTabContent .fade .modals button figure .capa h3,
+            body main #recetas #myTabContent .fade .modals button figure .capa h3,
+            body main #recetasR #myTabContent .fade .modals button figure .capa h3,
+            body main #testimonios #myTabContent .fade .modals button figure .capa h3 {
+              color: white;
+              font-size: 20px;
+              transition: all 500ms ease-out; }
+      body main #nosotros #myTabContent .fade .modals .interno .modal-body p,
+      body main #nosotrosN #myTabContent .fade .modals .interno .modal-body p,
+      body main #productos #myTabContent .fade .modals .interno .modal-body p,
+      body main #productosP #myTabContent .fade .modals .interno .modal-body p,
+      body main #recetas #myTabContent .fade .modals .interno .modal-body p,
+      body main #recetasR #myTabContent .fade .modals .interno .modal-body p,
+      body main #testimonios #myTabContent .fade .modals .interno .modal-body p {
+        text-align: justify; }
+      body main #nosotros #myTabContent .fade .modals .interno .modal-body img,
+      body main #nosotrosN #myTabContent .fade .modals .interno .modal-body img,
+      body main #productos #myTabContent .fade .modals .interno .modal-body img,
+      body main #productosP #myTabContent .fade .modals .interno .modal-body img,
+      body main #recetas #myTabContent .fade .modals .interno .modal-body img,
+      body main #recetasR #myTabContent .fade .modals .interno .modal-body img,
+      body main #testimonios #myTabContent .fade .modals .interno .modal-body img {
+        margin-bottom: 40px; }
+      body main #nosotros #myTabContent .fade .modals .interno .modal-footer .cerrar,
+      body main #nosotrosN #myTabContent .fade .modals .interno .modal-footer .cerrar,
+      body main #productos #myTabContent .fade .modals .interno .modal-footer .cerrar,
+      body main #productosP #myTabContent .fade .modals .interno .modal-footer .cerrar,
+      body main #recetas #myTabContent .fade .modals .interno .modal-footer .cerrar,
+      body main #recetasR #myTabContent .fade .modals .interno .modal-footer .cerrar,
+      body main #testimonios #myTabContent .fade .modals .interno .modal-footer .cerrar {
+        background-color: #830808;
+        padding: 10px 20px; }
+        body main #nosotros #myTabContent .fade .modals .interno .modal-footer .cerrar:hover,
+        body main #nosotrosN #myTabContent .fade .modals .interno .modal-footer .cerrar:hover,
+        body main #productos #myTabContent .fade .modals .interno .modal-footer .cerrar:hover,
+        body main #productosP #myTabContent .fade .modals .interno .modal-footer .cerrar:hover,
+        body main #recetas #myTabContent .fade .modals .interno .modal-footer .cerrar:hover,
+        body main #recetasR #myTabContent .fade .modals .interno .modal-footer .cerrar:hover,
+        body main #testimonios #myTabContent .fade .modals .interno .modal-footer .cerrar:hover {
+          background-color: #741212; }
+      body main #nosotros #myTabContent .fade .modals .interno .modal-footer a,
+      body main #nosotrosN #myTabContent .fade .modals .interno .modal-footer a,
+      body main #productos #myTabContent .fade .modals .interno .modal-footer a,
+      body main #productosP #myTabContent .fade .modals .interno .modal-footer a,
+      body main #recetas #myTabContent .fade .modals .interno .modal-footer a,
+      body main #recetasR #myTabContent .fade .modals .interno .modal-footer a,
+      body main #testimonios #myTabContent .fade .modals .interno .modal-footer a {
+        text-decoration: none;
+        color: white;
+        background-color: #830808;
+        padding: 15px;
+        border-radius: 10px;
+        align-items: center; }
+        body main #nosotros #myTabContent .fade .modals .interno .modal-footer a:hover,
+        body main #nosotrosN #myTabContent .fade .modals .interno .modal-footer a:hover,
+        body main #productos #myTabContent .fade .modals .interno .modal-footer a:hover,
+        body main #productosP #myTabContent .fade .modals .interno .modal-footer a:hover,
+        body main #recetas #myTabContent .fade .modals .interno .modal-footer a:hover,
+        body main #recetasR #myTabContent .fade .modals .interno .modal-footer a:hover,
+        body main #testimonios #myTabContent .fade .modals .interno .modal-footer a:hover {
+          background-color: #741212; }
+      body main #nosotros #myTabContent .fade .modals .botonModal,
+      body main #nosotros #myTabContent .fade .modals .botonModalFabrica,
+      body main #nosotros #myTabContent .fade .modals .botonModalTambos,
+      body main #nosotros #myTabContent .fade .modals .botonModalPersonal,
+      body main #nosotros #myTabContent .fade .modals .botonModalRosas,
+      body main #nosotros #myTabContent .fade .modals .botonModalBanco,
+      body main #nosotros #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #nosotros #myTabContent .fade .modals .botonModalCluster,
+      body main #nosotros #myTabContent .fade .modals .botonModalObjetivos,
+      body main #nosotros #myTabContent .fade .modals .botonModalAsociados,
+      body main #nosotros #myTabContent .fade .modals .botonModalFestival,
+      body main #nosotros #myTabContent .fade .modals .botonModalSuipacha,
+      body main #nosotros #myTabContent .fade .modals .botonModalVicente,
+      body main #nosotrosN #myTabContent .fade .modals .botonModal,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalFabrica,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalTambos,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalPersonal,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalRosas,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalBanco,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalCluster,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalObjetivos,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalAsociados,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalFestival,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalSuipacha,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalVicente,
+      body main #productos #myTabContent .fade .modals .botonModal,
+      body main #productos #myTabContent .fade .modals .botonModalFabrica,
+      body main #productos #myTabContent .fade .modals .botonModalTambos,
+      body main #productos #myTabContent .fade .modals .botonModalPersonal,
+      body main #productos #myTabContent .fade .modals .botonModalRosas,
+      body main #productos #myTabContent .fade .modals .botonModalBanco,
+      body main #productos #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #productos #myTabContent .fade .modals .botonModalCluster,
+      body main #productos #myTabContent .fade .modals .botonModalObjetivos,
+      body main #productos #myTabContent .fade .modals .botonModalAsociados,
+      body main #productos #myTabContent .fade .modals .botonModalFestival,
+      body main #productos #myTabContent .fade .modals .botonModalSuipacha,
+      body main #productos #myTabContent .fade .modals .botonModalVicente,
+      body main #productosP #myTabContent .fade .modals .botonModal,
+      body main #productosP #myTabContent .fade .modals .botonModalFabrica,
+      body main #productosP #myTabContent .fade .modals .botonModalTambos,
+      body main #productosP #myTabContent .fade .modals .botonModalPersonal,
+      body main #productosP #myTabContent .fade .modals .botonModalRosas,
+      body main #productosP #myTabContent .fade .modals .botonModalBanco,
+      body main #productosP #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #productosP #myTabContent .fade .modals .botonModalCluster,
+      body main #productosP #myTabContent .fade .modals .botonModalObjetivos,
+      body main #productosP #myTabContent .fade .modals .botonModalAsociados,
+      body main #productosP #myTabContent .fade .modals .botonModalFestival,
+      body main #productosP #myTabContent .fade .modals .botonModalSuipacha,
+      body main #productosP #myTabContent .fade .modals .botonModalVicente,
+      body main #recetas #myTabContent .fade .modals .botonModal,
+      body main #recetas #myTabContent .fade .modals .botonModalFabrica,
+      body main #recetas #myTabContent .fade .modals .botonModalTambos,
+      body main #recetas #myTabContent .fade .modals .botonModalPersonal,
+      body main #recetas #myTabContent .fade .modals .botonModalRosas,
+      body main #recetas #myTabContent .fade .modals .botonModalBanco,
+      body main #recetas #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #recetas #myTabContent .fade .modals .botonModalCluster,
+      body main #recetas #myTabContent .fade .modals .botonModalObjetivos,
+      body main #recetas #myTabContent .fade .modals .botonModalAsociados,
+      body main #recetas #myTabContent .fade .modals .botonModalFestival,
+      body main #recetas #myTabContent .fade .modals .botonModalSuipacha,
+      body main #recetas #myTabContent .fade .modals .botonModalVicente,
+      body main #recetasR #myTabContent .fade .modals .botonModal,
+      body main #recetasR #myTabContent .fade .modals .botonModalFabrica,
+      body main #recetasR #myTabContent .fade .modals .botonModalTambos,
+      body main #recetasR #myTabContent .fade .modals .botonModalPersonal,
+      body main #recetasR #myTabContent .fade .modals .botonModalRosas,
+      body main #recetasR #myTabContent .fade .modals .botonModalBanco,
+      body main #recetasR #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #recetasR #myTabContent .fade .modals .botonModalCluster,
+      body main #recetasR #myTabContent .fade .modals .botonModalObjetivos,
+      body main #recetasR #myTabContent .fade .modals .botonModalAsociados,
+      body main #recetasR #myTabContent .fade .modals .botonModalFestival,
+      body main #recetasR #myTabContent .fade .modals .botonModalSuipacha,
+      body main #recetasR #myTabContent .fade .modals .botonModalVicente,
+      body main #testimonios #myTabContent .fade .modals .botonModal,
+      body main #testimonios #myTabContent .fade .modals .botonModalFabrica,
+      body main #testimonios #myTabContent .fade .modals .botonModalTambos,
+      body main #testimonios #myTabContent .fade .modals .botonModalPersonal,
+      body main #testimonios #myTabContent .fade .modals .botonModalRosas,
+      body main #testimonios #myTabContent .fade .modals .botonModalBanco,
+      body main #testimonios #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #testimonios #myTabContent .fade .modals .botonModalCluster,
+      body main #testimonios #myTabContent .fade .modals .botonModalObjetivos,
+      body main #testimonios #myTabContent .fade .modals .botonModalAsociados,
+      body main #testimonios #myTabContent .fade .modals .botonModalFestival,
+      body main #testimonios #myTabContent .fade .modals .botonModalSuipacha,
+      body main #testimonios #myTabContent .fade .modals .botonModalVicente {
+        margin-top: 60px;
+        width: 300px;
+        height: 200px;
+        color: white;
+        font-size: 30px;
+        border-radius: 30px; }
+      body main #nosotros #myTabContent .fade .modals .botonModal,
+      body main #nosotrosN #myTabContent .fade .modals .botonModal,
+      body main #productos #myTabContent .fade .modals .botonModal,
+      body main #productosP #myTabContent .fade .modals .botonModal,
+      body main #recetas #myTabContent .fade .modals .botonModal,
+      body main #recetasR #myTabContent .fade .modals .botonModal,
+      body main #testimonios #myTabContent .fade .modals .botonModal {
+        background-image: url(../../img/trayectoria.png); }
+      body main #nosotros #myTabContent .fade .modals .botonModalTambos,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalTambos,
+      body main #productos #myTabContent .fade .modals .botonModalTambos,
+      body main #productosP #myTabContent .fade .modals .botonModalTambos,
+      body main #recetas #myTabContent .fade .modals .botonModalTambos,
+      body main #recetasR #myTabContent .fade .modals .botonModalTambos,
+      body main #testimonios #myTabContent .fade .modals .botonModalTambos {
+        background-image: url(../../img/tambo.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalFabrica,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalFabrica,
+      body main #productos #myTabContent .fade .modals .botonModalFabrica,
+      body main #productosP #myTabContent .fade .modals .botonModalFabrica,
+      body main #recetas #myTabContent .fade .modals .botonModalFabrica,
+      body main #recetasR #myTabContent .fade .modals .botonModalFabrica,
+      body main #testimonios #myTabContent .fade .modals .botonModalFabrica {
+        background-image: url(../../img/fabrica.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalPersonal,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalPersonal,
+      body main #productos #myTabContent .fade .modals .botonModalPersonal,
+      body main #productosP #myTabContent .fade .modals .botonModalPersonal,
+      body main #recetas #myTabContent .fade .modals .botonModalPersonal,
+      body main #recetasR #myTabContent .fade .modals .botonModalPersonal,
+      body main #testimonios #myTabContent .fade .modals .botonModalPersonal {
+        background-image: url(../../img/personal.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalBanco,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalBanco,
+      body main #productos #myTabContent .fade .modals .botonModalBanco,
+      body main #productosP #myTabContent .fade .modals .botonModalBanco,
+      body main #recetas #myTabContent .fade .modals .botonModalBanco,
+      body main #recetasR #myTabContent .fade .modals .botonModalBanco,
+      body main #testimonios #myTabContent .fade .modals .botonModalBanco {
+        background-image: url(../../img/bancoDeAlimentos.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalRosas,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalRosas,
+      body main #productos #myTabContent .fade .modals .botonModalRosas,
+      body main #productosP #myTabContent .fade .modals .botonModalRosas,
+      body main #recetas #myTabContent .fade .modals .botonModalRosas,
+      body main #recetasR #myTabContent .fade .modals .botonModalRosas,
+      body main #testimonios #myTabContent .fade .modals .botonModalRosas {
+        background-image: url(../../img/quesosRosa.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #productos #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #productosP #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #recetas #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #recetasR #myTabContent .fade .modals .botonModalOsteoporosis,
+      body main #testimonios #myTabContent .fade .modals .botonModalOsteoporosis {
+        background-image: url(../../img/osteoporosis.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalCluster,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalCluster,
+      body main #productos #myTabContent .fade .modals .botonModalCluster,
+      body main #productosP #myTabContent .fade .modals .botonModalCluster,
+      body main #recetas #myTabContent .fade .modals .botonModalCluster,
+      body main #recetasR #myTabContent .fade .modals .botonModalCluster,
+      body main #testimonios #myTabContent .fade .modals .botonModalCluster {
+        background-image: url(../../img/cluster1.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalObjetivos,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalObjetivos,
+      body main #productos #myTabContent .fade .modals .botonModalObjetivos,
+      body main #productosP #myTabContent .fade .modals .botonModalObjetivos,
+      body main #recetas #myTabContent .fade .modals .botonModalObjetivos,
+      body main #recetasR #myTabContent .fade .modals .botonModalObjetivos,
+      body main #testimonios #myTabContent .fade .modals .botonModalObjetivos {
+        background-image: url(../../img/cluster2.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalAsociados,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalAsociados,
+      body main #productos #myTabContent .fade .modals .botonModalAsociados,
+      body main #productosP #myTabContent .fade .modals .botonModalAsociados,
+      body main #recetas #myTabContent .fade .modals .botonModalAsociados,
+      body main #recetasR #myTabContent .fade .modals .botonModalAsociados,
+      body main #testimonios #myTabContent .fade .modals .botonModalAsociados {
+        background-image: url(../../img/cluster3.jpeg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalFestival,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalFestival,
+      body main #productos #myTabContent .fade .modals .botonModalFestival,
+      body main #productosP #myTabContent .fade .modals .botonModalFestival,
+      body main #recetas #myTabContent .fade .modals .botonModalFestival,
+      body main #recetasR #myTabContent .fade .modals .botonModalFestival,
+      body main #testimonios #myTabContent .fade .modals .botonModalFestival {
+        background-image: url(../../img/fiestaQueso.jpeg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalSuipacha,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalSuipacha,
+      body main #productos #myTabContent .fade .modals .botonModalSuipacha,
+      body main #productosP #myTabContent .fade .modals .botonModalSuipacha,
+      body main #recetas #myTabContent .fade .modals .botonModalSuipacha,
+      body main #recetasR #myTabContent .fade .modals .botonModalSuipacha,
+      body main #testimonios #myTabContent .fade .modals .botonModalSuipacha {
+        background-image: url(../../img/suipacha.jpg); }
+      body main #nosotros #myTabContent .fade .modals .botonModalVicente,
+      body main #nosotrosN #myTabContent .fade .modals .botonModalVicente,
+      body main #productos #myTabContent .fade .modals .botonModalVicente,
+      body main #productosP #myTabContent .fade .modals .botonModalVicente,
+      body main #recetas #myTabContent .fade .modals .botonModalVicente,
+      body main #recetasR #myTabContent .fade .modals .botonModalVicente,
+      body main #testimonios #myTabContent .fade .modals .botonModalVicente {
+        background-image: url(../../img/sanVicente.jpg); }
+  body main #nosotros .contenedorN,
+  body main #nosotrosN .contenedorN,
+  body main #productos .contenedorN,
+  body main #productosP .contenedorN,
+  body main #recetas .contenedorN,
+  body main #recetasR .contenedorN,
+  body main #testimonios .contenedorN {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 100px; }
+    body main #nosotros .contenedorN .infoContacto,
+    body main #nosotrosN .contenedorN .infoContacto,
+    body main #productos .contenedorN .infoContacto,
+    body main #productosP .contenedorN .infoContacto,
+    body main #recetas .contenedorN .infoContacto,
+    body main #recetasR .contenedorN .infoContacto,
+    body main #testimonios .contenedorN .infoContacto {
+      font-weight: bold; }
+      body main #nosotros .contenedorN .infoContacto a,
+      body main #nosotrosN .contenedorN .infoContacto a,
+      body main #productos .contenedorN .infoContacto a,
+      body main #productosP .contenedorN .infoContacto a,
+      body main #recetas .contenedorN .infoContacto a,
+      body main #recetasR .contenedorN .infoContacto a,
+      body main #testimonios .contenedorN .infoContacto a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        margin-top: 10px; }
+    body main #nosotros .contenedorN .texto p,
+    body main #nosotrosN .contenedorN .texto p,
+    body main #productos .contenedorN .texto p,
+    body main #productosP .contenedorN .texto p,
+    body main #recetas .contenedorN .texto p,
+    body main #recetasR .contenedorN .texto p,
+    body main #testimonios .contenedorN .texto p {
+      text-align: justify;
+      padding: 5% 20% 5% 10%;
+      letter-spacing: 1px;
+      font-style: italic; }
+  body main #nosotros .contenedorNo,
+  body main #nosotrosN .contenedorNo,
+  body main #productos .contenedorNo,
+  body main #productosP .contenedorNo,
+  body main #recetas .contenedorNo,
+  body main #recetasR .contenedorNo,
+  body main #testimonios .contenedorNo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px; }
+    body main #nosotros .contenedorNo .infoContacto,
+    body main #nosotrosN .contenedorNo .infoContacto,
+    body main #productos .contenedorNo .infoContacto,
+    body main #productosP .contenedorNo .infoContacto,
+    body main #recetas .contenedorNo .infoContacto,
+    body main #recetasR .contenedorNo .infoContacto,
+    body main #testimonios .contenedorNo .infoContacto {
+      font-weight: bold; }
+      body main #nosotros .contenedorNo .infoContacto a,
+      body main #nosotrosN .contenedorNo .infoContacto a,
+      body main #productos .contenedorNo .infoContacto a,
+      body main #productosP .contenedorNo .infoContacto a,
+      body main #recetas .contenedorNo .infoContacto a,
+      body main #recetasR .contenedorNo .infoContacto a,
+      body main #testimonios .contenedorNo .infoContacto a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        margin-top: 10px; }
+    body main #nosotros .contenedorNo .texto p,
+    body main #nosotrosN .contenedorNo .texto p,
+    body main #productos .contenedorNo .texto p,
+    body main #productosP .contenedorNo .texto p,
+    body main #recetas .contenedorNo .texto p,
+    body main #recetasR .contenedorNo .texto p,
+    body main #testimonios .contenedorNo .texto p {
+      text-align: justify;
+      padding: 0% 1% 5% 20%;
+      letter-spacing: 1px;
+      font-style: italic; }
+  body main #nosotros .contenedor,
+  body main #nosotrosN .contenedor,
+  body main #productos .contenedor,
+  body main #productosP .contenedor,
+  body main #recetas .contenedor,
+  body main #recetasR .contenedor,
+  body main #testimonios .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-right: 60px; }
+    body main #nosotros .contenedor .texto p,
+    body main #nosotrosN .contenedor .texto p,
+    body main #productos .contenedor .texto p,
+    body main #productosP .contenedor .texto p,
+    body main #recetas .contenedor .texto p,
+    body main #recetasR .contenedor .texto p,
+    body main #testimonios .contenedor .texto p {
+      font-size: 18px;
+      text-align: justify;
+      padding-top: 8%;
+      padding-right: 120px;
+      padding-left: 30px;
+      letter-spacing: 1px;
+      font-style: italic; }
+  body main #nosotros .contenidoP,
+  body main #nosotros .contenidoPe,
+  body main #nosotrosN .contenidoP,
+  body main #nosotrosN .contenidoPe,
+  body main #productos .contenidoP,
+  body main #productos .contenidoPe,
+  body main #productosP .contenidoP,
+  body main #productosP .contenidoPe,
+  body main #recetas .contenidoP,
+  body main #recetas .contenidoPe,
+  body main #recetasR .contenidoP,
+  body main #recetasR .contenidoPe,
+  body main #testimonios .contenidoP,
+  body main #testimonios .contenidoPe {
+    background-image: url(../../img/mozza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white; }
+    body main #nosotros .contenidoP::before,
+    body main #nosotros .contenidoPe::before,
+    body main #nosotrosN .contenidoP::before,
+    body main #nosotrosN .contenidoPe::before,
+    body main #productos .contenidoP::before,
+    body main #productos .contenidoPe::before,
+    body main #productosP .contenidoP::before,
+    body main #productosP .contenidoPe::before,
+    body main #recetas .contenidoP::before,
+    body main #recetas .contenidoPe::before,
+    body main #recetasR .contenidoP::before,
+    body main #recetasR .contenidoPe::before,
+    body main #testimonios .contenidoP::before,
+    body main #testimonios .contenidoPe::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      position: absolute;
+      opacity: 0.3; }
+    body main #nosotros .contenidoP a,
+    body main #nosotros .contenidoPe a,
+    body main #nosotrosN .contenidoP a,
+    body main #nosotrosN .contenidoPe a,
+    body main #productos .contenidoP a,
+    body main #productos .contenidoPe a,
+    body main #productosP .contenidoP a,
+    body main #productosP .contenidoPe a,
+    body main #recetas .contenidoP a,
+    body main #recetas .contenidoPe a,
+    body main #recetasR .contenidoP a,
+    body main #recetasR .contenidoPe a,
+    body main #testimonios .contenidoP a,
+    body main #testimonios .contenidoPe a {
+      text-decoration: none; }
+      body main #nosotros .contenidoP a:hover,
+      body main #nosotros .contenidoPe a:hover,
+      body main #nosotrosN .contenidoP a:hover,
+      body main #nosotrosN .contenidoPe a:hover,
+      body main #productos .contenidoP a:hover,
+      body main #productos .contenidoPe a:hover,
+      body main #productosP .contenidoP a:hover,
+      body main #productosP .contenidoPe a:hover,
+      body main #recetas .contenidoP a:hover,
+      body main #recetas .contenidoPe a:hover,
+      body main #recetasR .contenidoP a:hover,
+      body main #recetasR .contenidoPe a:hover,
+      body main #testimonios .contenidoP a:hover,
+      body main #testimonios .contenidoPe a:hover {
+        opacity: 0.7; }
+      body main #nosotros .contenidoP a h3,
+      body main #nosotros .contenidoPe a h3,
+      body main #nosotrosN .contenidoP a h3,
+      body main #nosotrosN .contenidoPe a h3,
+      body main #productos .contenidoP a h3,
+      body main #productos .contenidoPe a h3,
+      body main #productosP .contenidoP a h3,
+      body main #productosP .contenidoPe a h3,
+      body main #recetas .contenidoP a h3,
+      body main #recetas .contenidoPe a h3,
+      body main #recetasR .contenidoP a h3,
+      body main #recetasR .contenidoPe a h3,
+      body main #testimonios .contenidoP a h3,
+      body main #testimonios .contenidoPe a h3 {
+        padding-top: 40px;
+        font-size: 50px;
+        width: 50%;
+        text-align: center;
+        position: relative;
+        color: white;
+        letter-spacing: 5px; }
+  body main #nosotros .contenidoPe,
+  body main #nosotrosN .contenidoPe,
+  body main #productos .contenidoPe,
+  body main #productosP .contenidoPe,
+  body main #recetas .contenidoPe,
+  body main #recetasR .contenidoPe,
+  body main #testimonios .contenidoPe {
+    background-image: url(../../img/ricotta1.png); }
+  body main #nosotros .parrafoP,
+  body main #nosotrosN .parrafoP,
+  body main #productos .parrafoP,
+  body main #productosP .parrafoP,
+  body main #recetas .parrafoP,
+  body main #recetasR .parrafoP,
+  body main #testimonios .parrafoP {
+    padding: 40px 100px;
+    text-align: justify;
+    font-size: 20px; }
+    body main #nosotros .parrafoP span,
+    body main #nosotrosN .parrafoP span,
+    body main #productos .parrafoP span,
+    body main #productosP .parrafoP span,
+    body main #recetas .parrafoP span,
+    body main #recetasR .parrafoP span,
+    body main #testimonios .parrafoP span {
+      font-weight: bold; }
+  body main #nosotros .contenedor-img,
+  body main #nosotrosN .contenedor-img,
+  body main #productos .contenedor-img,
+  body main #productosP .contenedor-img,
+  body main #recetas .contenedor-img,
+  body main #recetasR .contenedor-img,
+  body main #testimonios .contenedor-img {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px; }
+    body main #nosotros .contenedor-img .caja:nth-child(1),
+    body main #nosotrosN .contenedor-img .caja:nth-child(1),
+    body main #productos .contenedor-img .caja:nth-child(1),
+    body main #productosP .contenedor-img .caja:nth-child(1),
+    body main #recetas .contenedor-img .caja:nth-child(1),
+    body main #recetasR .contenedor-img .caja:nth-child(1),
+    body main #testimonios .contenedor-img .caja:nth-child(1) {
+      grid-column-start: span 2; }
+    body main #nosotros .contenedor-img .caja:nth-child(4),
+    body main #nosotrosN .contenedor-img .caja:nth-child(4),
+    body main #productos .contenedor-img .caja:nth-child(4),
+    body main #productosP .contenedor-img .caja:nth-child(4),
+    body main #recetas .contenedor-img .caja:nth-child(4),
+    body main #recetasR .contenedor-img .caja:nth-child(4),
+    body main #testimonios .contenedor-img .caja:nth-child(4) {
+      grid-row-start: span 2; }
+    body main #nosotros .contenedor-img .caja .figure,
+    body main #nosotrosN .contenedor-img .caja .figure,
+    body main #productos .contenedor-img .caja .figure,
+    body main #productosP .contenedor-img .caja .figure,
+    body main #recetas .contenedor-img .caja .figure,
+    body main #recetasR .contenedor-img .caja .figure,
+    body main #testimonios .contenedor-img .caja .figure {
+      width: 100%;
+      height: 100%; }
+      body main #nosotros .contenedor-img .caja .figure img,
+      body main #nosotrosN .contenedor-img .caja .figure img,
+      body main #productos .contenedor-img .caja .figure img,
+      body main #productosP .contenedor-img .caja .figure img,
+      body main #recetas .contenedor-img .caja .figure img,
+      body main #recetasR .contenedor-img .caja .figure img,
+      body main #testimonios .contenedor-img .caja .figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  body main #nosotros .divReceta,
+  body main #nosotrosN .divReceta,
+  body main #productos .divReceta,
+  body main #productosP .divReceta,
+  body main #recetas .divReceta,
+  body main #recetasR .divReceta,
+  body main #testimonios .divReceta {
+    min-width: 180px;
+    max-width: 185px; }
+    body main #nosotros .divReceta figure,
+    body main #nosotrosN .divReceta figure,
+    body main #productos .divReceta figure,
+    body main #productosP .divReceta figure,
+    body main #recetas .divReceta figure,
+    body main #recetasR .divReceta figure,
+    body main #testimonios .divReceta figure {
+      margin: 0;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+      body main #nosotros .divReceta figure:hover > .capa,
+      body main #nosotrosN .divReceta figure:hover > .capa,
+      body main #productos .divReceta figure:hover > .capa,
+      body main #productosP .divReceta figure:hover > .capa,
+      body main #recetas .divReceta figure:hover > .capa,
+      body main #recetasR .divReceta figure:hover > .capa,
+      body main #testimonios .divReceta figure:hover > .capa {
+        opacity: 0.7;
+        visibility: visible; }
+      body main #nosotros .divReceta figure:hover > .capa h3,
+      body main #nosotrosN .divReceta figure:hover > .capa h3,
+      body main #productos .divReceta figure:hover > .capa h3,
+      body main #productosP .divReceta figure:hover > .capa h3,
+      body main #recetas .divReceta figure:hover > .capa h3,
+      body main #recetasR .divReceta figure:hover > .capa h3,
+      body main #testimonios .divReceta figure:hover > .capa h3 {
+        margin-top: calc(35% - 12px); }
+      body main #nosotros .divReceta figure:hover > img,
+      body main #nosotrosN .divReceta figure:hover > img,
+      body main #productos .divReceta figure:hover > img,
+      body main #productosP .divReceta figure:hover > img,
+      body main #recetas .divReceta figure:hover > img,
+      body main #recetasR .divReceta figure:hover > img,
+      body main #testimonios .divReceta figure:hover > img {
+        transform: scale(1.5); }
+      body main #nosotros .divReceta figure .capa,
+      body main #nosotrosN .divReceta figure .capa,
+      body main #productos .divReceta figure .capa,
+      body main #productosP .divReceta figure .capa,
+      body main #recetas .divReceta figure .capa,
+      body main #recetasR .divReceta figure .capa,
+      body main #testimonios .divReceta figure .capa {
+        position: absolute;
+        top: 0;
+        background-color: #830808;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+        body main #nosotros .divReceta figure .capa a,
+        body main #nosotrosN .divReceta figure .capa a,
+        body main #productos .divReceta figure .capa a,
+        body main #productosP .divReceta figure .capa a,
+        body main #recetas .divReceta figure .capa a,
+        body main #recetasR .divReceta figure .capa a,
+        body main #testimonios .divReceta figure .capa a {
+          text-decoration: none; }
+          body main #nosotros .divReceta figure .capa a h3,
+          body main #nosotrosN .divReceta figure .capa a h3,
+          body main #productos .divReceta figure .capa a h3,
+          body main #productosP .divReceta figure .capa a h3,
+          body main #recetas .divReceta figure .capa a h3,
+          body main #recetasR .divReceta figure .capa a h3,
+          body main #testimonios .divReceta figure .capa a h3 {
+            color: white;
+            font-size: 20px;
+            transition: all 500ms ease-out; }
+          body main #nosotros .divReceta figure .capa a .none,
+          body main #nosotrosN .divReceta figure .capa a .none,
+          body main #productos .divReceta figure .capa a .none,
+          body main #productosP .divReceta figure .capa a .none,
+          body main #recetas .divReceta figure .capa a .none,
+          body main #recetasR .divReceta figure .capa a .none,
+          body main #testimonios .divReceta figure .capa a .none {
+            display: none; }
+      body main #nosotros .divReceta figure img,
+      body main #nosotrosN .divReceta figure img,
+      body main #productos .divReceta figure img,
+      body main #productosP .divReceta figure img,
+      body main #recetas .divReceta figure img,
+      body main #recetasR .divReceta figure img,
+      body main #testimonios .divReceta figure img {
+        width: 100%;
+        height: 100%; }
+  body main #nosotros .divImg,
+  body main #nosotrosN .divImg,
+  body main #productos .divImg,
+  body main #productosP .divImg,
+  body main #recetas .divImg,
+  body main #recetasR .divImg,
+  body main #testimonios .divImg {
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    body main #nosotros .divImg figure,
+    body main #nosotrosN .divImg figure,
+    body main #productos .divImg figure,
+    body main #productosP .divImg figure,
+    body main #recetas .divImg figure,
+    body main #recetasR .divImg figure,
+    body main #testimonios .divImg figure {
+      margin: 0;
+      position: relative;
+      width: 440px;
+      height: 350px;
+      overflow: hidden;
+      cursor: pointer; }
+      body main #nosotros .divImg figure:hover > .capa,
+      body main #nosotrosN .divImg figure:hover > .capa,
+      body main #productos .divImg figure:hover > .capa,
+      body main #productosP .divImg figure:hover > .capa,
+      body main #recetas .divImg figure:hover > .capa,
+      body main #recetasR .divImg figure:hover > .capa,
+      body main #testimonios .divImg figure:hover > .capa {
+        opacity: 1;
+        visibility: visible; }
+      body main #nosotros .divImg figure:hover > .capa h3,
+      body main #nosotrosN .divImg figure:hover > .capa h3,
+      body main #productos .divImg figure:hover > .capa h3,
+      body main #productosP .divImg figure:hover > .capa h3,
+      body main #recetas .divImg figure:hover > .capa h3,
+      body main #recetasR .divImg figure:hover > .capa h3,
+      body main #testimonios .divImg figure:hover > .capa h3 {
+        margin-top: 150px; }
+      body main #nosotros .divImg figure:hover > img,
+      body main #nosotrosN .divImg figure:hover > img,
+      body main #productos .divImg figure:hover > img,
+      body main #productosP .divImg figure:hover > img,
+      body main #recetas .divImg figure:hover > img,
+      body main #recetasR .divImg figure:hover > img,
+      body main #testimonios .divImg figure:hover > img {
+        transform: scale(1.5); }
+      body main #nosotros .divImg figure .capa,
+      body main #nosotrosN .divImg figure .capa,
+      body main #productos .divImg figure .capa,
+      body main #productosP .divImg figure .capa,
+      body main #recetas .divImg figure .capa,
+      body main #recetasR .divImg figure .capa,
+      body main #testimonios .divImg figure .capa {
+        position: absolute;
+        top: 0;
+        background-color: #830808;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+        body main #nosotros .divImg figure .capa h3,
+        body main #nosotrosN .divImg figure .capa h3,
+        body main #productos .divImg figure .capa h3,
+        body main #productosP .divImg figure .capa h3,
+        body main #recetas .divImg figure .capa h3,
+        body main #recetasR .divImg figure .capa h3,
+        body main #testimonios .divImg figure .capa h3 {
+          color: white;
+          font-size: 30px;
+          transition: all 500ms ease-out; }
+      body main #nosotros .divImg figure img,
+      body main #nosotrosN .divImg figure img,
+      body main #productos .divImg figure img,
+      body main #productosP .divImg figure img,
+      body main #recetas .divImg figure img,
+      body main #recetasR .divImg figure img,
+      body main #testimonios .divImg figure img {
+        width: 100%;
+        height: 100%; }
+  body main #recetas .contenedor {
+    margin: 0 0 20px 0; }
+  body #recetas {
+    padding: 15px; }
+  body #recetasR {
+    padding: 40px 10px 10px 10px; }
+    body #recetasR .card-deck {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      body #recetasR .card-deck .card {
+        margin: 25px 10px;
+        width: 310px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+        body #recetasR .card-deck .card .card-footer {
+          text-align: center; }
+          body #recetasR .card-deck .card .card-footer .boton {
+            background-color: #940909;
+            color: white; }
+            body #recetasR .card-deck .card .card-footer .boton:hover {
+              background: #830808; }
+  body #testimonios {
+    background-image: url(../../img/flor.png);
+    padding-top: 40px; }
+    body #testimonios .divTestimonios figure {
+      margin: 0;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      cursor: pointer; }
+      body #testimonios .divTestimonios figure:hover > img {
+        transform: scale(1.3); }
+      body #testimonios .divTestimonios figure img {
+        width: 100%;
+        height: 100%; }
+  body .bg-contacto {
+    background-color: white; }
+    body .bg-contacto h1 {
+      font-size: 30px;
+      color: #830808;
+      margin-top: 60px;
+      margin-bottom: -110px;
+      text-align: center; }
+      body .bg-contacto h1::first-letter {
+        font-size: 50px; }
+    body .bg-contacto .container-form {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin: auto;
+      width: 93%;
+      max-width: 900px;
+      border-radius: 1em;
+      padding: 1em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 40px; }
+      body .bg-contacto .container-form .info-form {
+        text-align: center; }
+      body .bg-contacto .container-form p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        font-weight: bold; }
+      body .bg-contacto .container-form a {
+        font-size: 15px;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        margin-bottom: 15px;
+        color: black;
+        font-weight: 700; }
+        body .bg-contacto .container-form a i {
+          color: #830808;
+          margin-right: 10px; }
+      body .bg-contacto .container-form form {
+        margin-top: 70px;
+        margin-left: 85px; }
+        body .bg-contacto .container-form form label {
+          display: flex;
+          flex-direction: column;
+          font-size: 15px; }
+        body .bg-contacto .container-form form .campo,
+        body .bg-contacto .container-form form textarea {
+          width: 30%;
+          padding: 10px;
+          margin-left: 70px;
+          font-size: 12px;
+          border: none;
+          border-bottom: 3px solid #741212;
+          background: transparent;
+          margin-bottom: 10px;
+          outline: none; }
+        body .bg-contacto .container-form form textarea {
+          max-width: 560px;
+          min-width: 583px;
+          max-height: 200px;
+          max-height: 250px; }
+        body .bg-contacto .container-form form .btn-enviar {
+          padding: 8px 262px;
+          font-size: 12px;
+          border: none;
+          outline: 0px;
+          margin-left: 70px;
+          margin-bottom: 70px;
+          background-color: #830808;
+          color: white;
+          border-radius: 3px;
+          cursor: pointer;
+          transform: all 300ms ease; }
+          body .bg-contacto .container-form form .btn-enviar:hover {
+            background-color: #830808; }
+
+/* WHATSAPP */
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  transition: all 300ms ease; }
+
+/* FOOTER */
+#footer {
+  bottom: 0px;
+  width: 100%;
+  background: black; }
+  #footer .main-content {
+    display: flex; }
+    #footer .main-content .box {
+      flex-basis: 50%;
+      padding: 10px 20px; }
+      #footer .main-content .box .h4 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 8px;
+        margin-top: 5px; }
+      #footer .main-content .box .content {
+        margin: 20px 0 0 0;
+        position: relative;
+        color: white; }
+        #footer .main-content .box .content ul {
+          list-style: none; }
+          #footer .main-content .box .content ul li a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 7px;
+            font-size: 1.0625rem;
+            letter-spacing: 1px; }
+            #footer .main-content .box .content ul li a:hover {
+              border-bottom: 5px solid #570808; }
+        #footer .main-content .box .content:before {
+          position: absolute;
+          content: '';
+          top: -10px;
+          height: 2px;
+          width: 100%;
+          background: #1a1a1a; }
+        #footer .main-content .box .content:after {
+          position: absolute;
+          content: '';
+          height: 2px;
+          width: 15%;
+          background: #940909;
+          top: -10px; }
+  #footer .center .content .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer; }
+    #footer .center .content .fas:hover {
+      background: #940909; }
+  #footer .center .content .text {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px; }
+  #footer .center .content .phone {
+    margin: 15px 0; }
+  #footer .right form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: white; }
+  #footer .right form .msg {
+    margin-top: 10px; }
+  #footer .right form input {
+    height: 35px; }
+  #footer .right form input,
+  #footer .right form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+    color: white; }
+    #footer .right form input:focus,
+    #footer .right form textarea:focus {
+      outline-color: #940909; }
+  #footer .right form .botonF {
+    margin-top: 10px; }
+    #footer .right form .botonF button {
+      height: 40px;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: #940909;
+      font-size: 1.0625rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s; }
+      #footer .right form .botonF button:hover {
+        background: #4d0c0c; }
+  #footer .bottom {
+    margin-top: 20px;
+    text-align: center;
+    color: #424141; }
+    #footer .bottom center {
+      padding: 5px;
+      font-size: 0.9375rem;
+      background: #151515; }
+      #footer .bottom center span {
+        color: #656565; }
+
+@media screen and (max-width: 700px) {
+  body main #recetasR .card-deck .card {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  body header #check:checked ~ .menu {
+    height: 100vh; }
+  body main #productosP .contenidoP,
+  body main #productosP .contenidoPe {
+    background: 55%; }
+  body main #productosP .contenedor-img {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr); }
+    body main #productosP .contenedor-img .caja img {
+      height: 200px; }
+  body main #recetas .contenedor {
+    flex-wrap: wrap; }
+    body main #recetas .contenedor .divReceta {
+      margin-top: 10px; }
+      body main #recetas .contenedor .divReceta .none {
+        display: flex; }
+  body main #testimonios .contenedor {
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 900px) {
+  #productosP .contenedor-img {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 200px; }
+    #productosP .contenedor-img .caja:nth-child(1) {
+      grid-column-start: span 1; }
+  #footer {
+    position: relative;
+    bottom: 0px; }
+    #footer .main-content {
+      flex-wrap: wrap;
+      flex-direction: column; }
+      #footer .main-content .box {
+        margin: 5px 0; } }
+
+@media screen and (min-width: 768px) {
+  body header nav {
+    padding: 0; }
+    body header nav .divLogo .logo {
+      height: 150px; }
+    body header nav .barBoton {
+      display: none; }
+    body header nav .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 150px;
+      padding: 0 0 0 230px;
+      margin: 0;
+      left: 0;
+      right: 0;
+      top: 0; }
+      body header nav .menu li {
+        display: inline-block;
+        line-height: 22px;
+        margin: 0; }
+  body main .titulo {
+    font-size: 50px; }
+    body main .titulo::first-letter {
+      font-size: 60px; }
+  body main #recetasR {
+    padding: 40px 30px 30px 30px; }
+    body main #recetasR .card-deck .card {
+      width: 350px; } }
+
+body main #nosotros #myTabContent .fade .modals button figure .capa,
+body main #nosotrosN #myTabContent .fade .modals button figure .capa,
+body main #productos #myTabContent .fade .modals button figure .capa,
+body main #productosP #myTabContent .fade .modals button figure .capa,
+body main #recetas #myTabContent .fade .modals button figure .capa,
+body main #recetasR #myTabContent .fade .modals button figure .capa,
+body main #testimonios #myTabContent .fade .modals button figure .capa, body main #nosotros .divReceta figure .capa,
+body main #nosotrosN .divReceta figure .capa,
+body main #productos .divReceta figure .capa,
+body main #productosP .divReceta figure .capa,
+body main #recetas .divReceta figure .capa,
+body main #recetasR .divReceta figure .capa,
+body main #testimonios .divReceta figure .capa, body main #nosotros .divImg figure .capa,
+body main #nosotrosN .divImg figure .capa,
+body main #productos .divImg figure .capa,
+body main #productosP .divImg figure .capa,
+body main #recetas .divImg figure .capa,
+body main #recetasR .divImg figure .capa,
+body main #testimonios .divImg figure .capa {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out; }
